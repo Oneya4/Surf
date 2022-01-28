@@ -36,7 +36,7 @@ class LocationDetailScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     _iconBorder(
-                      size: 52,
+                      radius: 52,
                       child: IconButton(
                         icon: const Icon(
                           Icons.arrow_back,
@@ -47,7 +47,7 @@ class LocationDetailScreen extends StatelessWidget {
                       ),
                     ),
                     _iconBorder(
-                      size: 52,
+                      radius: 52,
                       child: IconButton(
                         icon: const Icon(
                           Icons.bookmark,
@@ -139,7 +139,7 @@ class LocationDetailScreen extends StatelessWidget {
                         _surfersNearby(),
                         IconButton(
                           icon: _iconBorder(
-                            size: 40,
+                            radius: 40,
                             child: const Icon(Icons.arrow_right_alt_outlined),
                           ),
                           onPressed: () {},
@@ -178,10 +178,10 @@ class LocationDetailScreen extends StatelessWidget {
     );
   }
 
-  _iconBorder({required Widget child, required double size}) {
+  _iconBorder({required Widget child, required double radius}) {
     return Container(
-      height: size,
-      width: size,
+      height: radius,
+      width: radius,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(
@@ -201,8 +201,8 @@ class LocationDetailScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         child: Image.network(
           'https://static.tildacdn.com/tild6136-3130-4434-a533-383230653436/turn_wave.jpg',
-          height: 50,
-          width: 50,
+          height: 47,
+          width: 47,
           fit: BoxFit.cover,
         ),
       ),
