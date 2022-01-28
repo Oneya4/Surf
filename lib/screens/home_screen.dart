@@ -14,15 +14,21 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.notes_sharp),
-                  ),
-                  const CircleAvatar(),
-                ],
+              Padding(
+                padding: const EdgeInsets.only(right: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.notes_sharp),
+                    ),
+                    const CircleAvatar(
+                      foregroundImage: NetworkImage(
+                          'http://www.davecrossphotography.com/wp-content/uploads/2011/03/NYC-Headshot-Men-013.jpg'),
+                    ),
+                  ],
+                ),
               ),
               Card(
                 elevation: 6,
@@ -57,14 +63,17 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 23, color: Colors.blueAccent),
                   ),
                   const SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      Text('Popular', style: TextStyle(color: Colors.teal)),
-                      Text('Malibu'),
-                      Text('Oahu'),
-                      Text('Ericeira'),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text('Popular', style: TextStyle(color: Colors.teal)),
+                        Text('Malibu'),
+                        Text('Oahu'),
+                        Text('Ericeira'),
+                      ],
+                    ),
                   ),
                 ],
               ),
