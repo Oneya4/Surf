@@ -9,7 +9,7 @@ class Destinations with ChangeNotifier {
     Destination(
       id: 'D1',
       imageUrl:
-          'https://static.tildacdn.com/tild6136-3130-4434-a533-383230653436/turn_wave.jpg',
+          'http://blog.laterooms.com/wp-content/uploads/2016/08/Surfing.jpg',
       name: 'Gold Coast',
       location: 'Australia',
       description:
@@ -20,7 +20,7 @@ class Destinations with ChangeNotifier {
     Destination(
       id: 'D2',
       imageUrl:
-          'https://static.tildacdn.com/tild6136-3130-4434-a533-383230653436/turn_wave.jpg',
+          'https://live.staticflickr.com/935/41894640900_3bcf9901c5_b.jpg',
       name: 'Bukit Peninsula',
       location: 'Bali, Indonesia',
       description:
@@ -31,12 +31,12 @@ class Destinations with ChangeNotifier {
     Destination(
       id: 'D3',
       imageUrl:
-          'https://static.tildacdn.com/tild6136-3130-4434-a533-383230653436/turn_wave.jpg',
+          'https://i.pinimg.com/originals/88/30/cc/8830cc98509d18a7f749f350b42451b5.jpg',
       name: 'Sandy Beach',
       location: 'Bikini Bottom',
       description:
           'The Bukit Peninsula ia at the southern end of the island of Bali, Indonesia. It is traditionally considered to be the entire area south of Jimbaran beach. Unlike the bulk of Bali, it features a dry, arid an stony landscape',
-      waterFlow: '12.8ft',
+      waterFlow: '15.8ft',
       cost: 1065,
     ),
   ];
